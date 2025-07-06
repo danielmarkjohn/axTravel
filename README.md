@@ -95,8 +95,3 @@ src/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-AxSphere - [contact@axsphere.com](mailto:axspherehub@gmail.com)
-
-Project Link: [https://github.com/your-username/axsphere-website](https://github.com/axsphere/axWebsite)
