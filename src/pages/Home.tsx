@@ -1,21 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import Meta from "../components/Meta";
 import Services from "./Services";
-import Portfolio from "./Portfolio";
-import Pricing from "./Pricing/Pricing";
 import MissionVision from "components/MissionVision";
 import AnimatedStats from "components/AnimatedStats";
+import TravelBooking from "components/TravelBooking";
 import { COMPANY_METADATA } from "data/company";
 
 const Home: React.FC = () => {
   return (
     <>
       <Meta
-        title="AxSphere - Innovative Digital Solutions"
-        description="AxSphere delivers cutting-edge technology solutions for businesses. Transform your ideas into powerful digital solutions with our expert team."
-        keywords="technology, digital solutions, web development, software development, tech consulting"
+        title="TravelEase - Your Journey Made Simple"
+        description="Book rides, plan trips, and travel with ease. Find the perfect transportation solution for your journey with our easy booking platform."
+        keywords="travel, booking, rides, transportation, journey, trip planning"
       />
       <motion.div
         initial={{ opacity: 0 }}
@@ -53,7 +51,7 @@ const Home: React.FC = () => {
                 transition={{ delay: 0.2 }}
                 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
               >
-                Welcome to{" "}
+                Travel with{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                   {COMPANY_METADATA.name}
                 </span>
@@ -64,20 +62,17 @@ const Home: React.FC = () => {
                 transition={{ delay: 0.4 }}
                 className="max-w-xl mx-auto mt-6 text-xl text-gray-500"
               >
-                {COMPANY_METADATA.tagLine}
+                Your journey, our priority. Book rides easily and travel in comfort.
               </motion.p>
+              
+              {/* Travel Booking Component */}
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6 }}
                 className="mt-10"
               >
-                <Link
-                  to="/contact"
-                  className="px-8 py-3 text-base font-medium text-white bg-primary rounded-md hover:bg-primary/90"
-                >
-                  Get Started
-                </Link>
+                <TravelBooking />
               </motion.div>
             </div>
           </div>
@@ -86,8 +81,6 @@ const Home: React.FC = () => {
         <div className="py-16 bg-white">
           <AnimatedStats />
           <Services />
-          <Portfolio />
-          <Pricing />
           <MissionVision />
         </div>
       </motion.div>
