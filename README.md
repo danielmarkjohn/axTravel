@@ -1,6 +1,6 @@
 # Travel Website
 
-A modern, responsive website for AxSphere, a technology solutions company. Built with React, TypeScript, and Tailwind CSS.
+A modern, responsive website for travel solutions company. Built with React, TypeScript, and Tailwind CSS.
 
 ## Features
 
