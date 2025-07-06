@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+  },
+  "include": ["src"],
+  "incremental": true, // Enable incremental compilation
+  "sourceMap": true, // Generate source maps
+  "outDir": "./dist", // Output directory for generated files
+  "rootDir": "./src" // Root directory of input files
+}

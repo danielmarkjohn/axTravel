@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-900 bg-white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply px-6 py-2 font-medium transition-colors rounded-lg;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-primary/90;
+  }
+  
+  .btn-secondary {
+    @apply text-white bg-secondary hover:bg-secondary/90;
+  }
+}
+
+/* src/styles/index.css */
+/* Add these styles for custom scrollbars */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar for the blog feed */
+.blog-feed-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #e2e8f0 #f8fafc;
+}
+
+.blog-feed-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.blog-feed-scroll::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.blog-feed-scroll::-webkit-scrollbar-thumb {
+  background-color: #e2e8f0;
+  border-radius: 3px;
+}
